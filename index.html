@@ -407,6 +407,10 @@
   .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; margin-top:36px; align-items:start; }
   .contact-list a{ display:flex; justify-content:space-between; align-items:center; text-decoration:none; padding:18px 4px; border-bottom:1px solid var(--line); color:var(--tinta); font-weight:500; transition:padding-left .3s ease, color .3s ease; }
   .contact-list a:hover{ padding-left:10px; color:var(--dourado-fundo); }
+  .contact-list a .channel-main{ display:flex; align-items:center; gap:12px; }
+  .contact-list a .channel-icon{ width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; color:var(--tinta); flex-shrink:0; }
+  .contact-list a .channel-icon svg{ width:100%; height:100%; display:block; }
+  .contact-list a:hover .channel-icon{ color:var(--dourado-fundo); }
   .contact-list a span:last-child{ transition:transform .3s ease; color:var(--ink-3); }
   .contact-list a:hover span:last-child{ transform:translateX(4px); color:var(--dourado); }
   @media (max-width:800px){ .contact-grid{ grid-template-columns:1fr; gap:8px; } }
@@ -541,7 +545,7 @@
   <section style="background:var(--papel-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
     <div class="container reveal">
       <p class="kicker"><svg class="mk-spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 C12.4 8 13.6 10.4 21 12 C13.6 13.6 12.4 16 12 23 C11.6 16 10.4 13.6 3 12 C10.4 10.4 11.6 8 12 1 Z"/></svg>O que a Lumis resolve</p>
-      <h2 class="heading">Problemas reais de percepção não , que não estão relacionados apenas a frequência:</h2><svg class="heading-brush" viewBox="0 0 64 10" aria-hidden="true"><path d="M2 6 C10 2 16 9 24 5 C32 1 40 8 48 4 C54 1 58 6 62 3"/></svg>
+      <h2 class="heading">Problemas reais de percepção que não estão relacionados apenas a frequência:</h2><svg class="heading-brush" viewBox="0 0 64 10" aria-hidden="true"><path d="M2 6 C10 2 16 9 24 5 C32 1 40 8 48 4 C54 1 58 6 62 3"/></svg>
       <div class="panels-grid">
         <div class="panel-card">
           <h3>Posicionamento confuso</h3>
@@ -745,14 +749,14 @@
   <section id="contato">
     <div class="container reveal">
       <p class="kicker"><svg class="mk-spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 C12.4 8 13.6 10.4 21 12 C13.6 13.6 12.4 16 12 23 C11.6 16 10.4 13.6 3 12 C10.4 10.4 11.6 8 12 1 Z"/></svg>Contato</p>
-      <h2 class="heading">Entre em contato e vamos fortalecer sua presença no digital</h2><svg class="heading-brush" viewBox="0 0 64 10" aria-hidden="true"><path d="M2 6 C10 2 16 9 24 5 C32 1 40 8 48 4 C54 1 58 6 62 3"/></svg>
+      <h2 class="heading">Entre em contato e vamos fortalecer sua presença no digital.</h2><svg class="heading-brush" viewBox="0 0 64 10" aria-hidden="true"><path d="M2 6 C10 2 16 9 24 5 C32 1 40 8 48 4 C54 1 58 6 62 3"/></svg>
       <div class="contact-grid">
         <p class="lede">Acesse o canal que for melhor para você. O primeiro contato é sempre consultivo e sem compromisso, onde entendemos suas necessidades e objetivos.</p>
         <div class="contact-list">
-          <a href="https://wa.me/5583991932821" target="_blank" rel="noopener"><span>WhatsApp</span><span>→</span></a>
-          <a href="#" target="_blank" rel="noopener"><span>Instagram</span><span>→</span></a>
-          <a href="#" target="_blank" rel="noopener"><span>LinkedIn</span><span>→</span></a>
-          <a href="#"><span>E-mail</span><span>→</span></a>
+          <a href="https://wa.me/5583991932821" target="_blank" rel="noopener"><span class="channel-main"><span class="channel-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5c-4.7 0-8.5 3.8-8.5 8.5 0 1.6.5 3.2 1.4 4.6l-1 3.5 3.7-1c1.4.9 3 1.4 4.7 1.4 4.7 0 8.5-3.8 8.5-8.5S16.7 3.5 12 3.5Zm0 14.8c-1.4 0-2.8-.4-4-.9l-.3-.2-2.2.6.6-2.1-.2-.3A6.1 6.1 0 0 1 5.8 12c0-3.4 2.8-6.2 6.2-6.2S18.2 8.6 18.2 12s-2.8 6.3-6.2 6.3Zm3.4-4.7c-.2-.1-1.1-.6-1.3-.7-.2-.1-.3-.1-.4.1-.1.1-.4.7-.5.9-.1.1-.2.1-.4.1-.2-.1-.8-.3-1.6-.9-.6-.5-1-1.1-1.1-1.3-.1-.2 0-.3.1-.4l.3-.3c.1-.1.1-.2.2-.3.1-.1.1-.2.1-.3 0-.1 0-.2-.1-.3l-.2-.3c-.1-.1-.3-.3-.5-.4-.2-.1-.4-.1-.5-.1h-.4c-.1 0-.3.1-.4.2l-.4.4c-.1.1-.3.3-.3.6 0 .3.1.5.2.7.1.2.5.7.9 1.1.7.6 1.3.8 1.6.9.2.1.5.1.7-.1.2-.1.5-.2.7-.4.1-.1.2-.1.4-.1.2 0 .5.1.7.2.2.1.5.4.6.6.1.2.1.5.1.7 0 .2 0 .5-.1.7-.2.1-.3.3-.5.4Z" fill="currentColor"/></svg></span><span>WhatsApp</span></span><span>→</span></a>
+          <a href="http://localhost:5173/#" target="_blank" rel="noopener"><span class="channel-main"><span class="channel-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg></span><span>Instagram</span></span><span>→</span></a>
+          <a href="http://localhost:5173/#" target="_blank" rel="noopener"><span class="channel-main"><span class="channel-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="3" fill="currentColor"/><path d="M8.3 9.6h1.8v6.9H8.3v-6.9Zm.9-2.2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12.7 9.6h1.7v1h.1c.2-.5.8-1.1 1.8-1.1 1.9 0 2.3 1.3 2.3 3v3.9h-1.9v-3.6c0-.9 0-2-1.2-2-1.2 0-1.4 1-1.4 2v3.6h-1.9v-6.9Z" fill="#fff"/></svg></span><span>LinkedIn</span></span><span>→</span></a>
+          <a href="http://localhost:5173/#"><span class="channel-main"><span class="channel-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M4.8 7l7.2 5.7 7.2-5.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>E-mail</span></span><span>→</span></a>
         </div>
       </div>
     </div>
@@ -764,7 +768,7 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <span>LUMIS <span style="color:var(--ink-3); font-weight:400; font-size:.8em;">Marketing Médico</span></span>
-      <p class="footer-tagline">Torne seu valor visível.</p>
+      <p class="footer-tagline" style="font-style:normal; margin-top:4px;">Torne seu valor visível</p>
     </div>
     <div class="footer-cols">
       <div class="footer-col">
